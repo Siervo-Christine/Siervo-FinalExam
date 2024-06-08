@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: rgba(0, 0, 0, 0.7);
+    --highlight-color: #ffe600;
+    --text-color: #fff;
+    --card-shadow: 0 0 5px #999;
+    --body-bg-color: #f0f0f0;
+    --body-text-color: #333;
+    --nav-bg-hover-color: #ddd;
+    --row-text-align: center;
+    --footer-bg-color: #333;
+    --footer-text-color: #fff;
+}
+
+nav {
+   background: linear-gradient(90deg, #000000, #4a90e2);
+   display: flex;
+   align-items: center;
+   height: 100px;
+   justify-content: right;
+}
+
+.logo {
+   display: flex;
+   position: absolute;
+   left: 0;
+   margin: 100px;
+   height: 110px;
+   width: 110px;
+   margin-top: 5px;
+}
+
+a {
+   padding: 40px;
+   color: #ffffff;
+   font-family: 'Roboto';
+   text-decoration: none;
+   font-size: 20px;
+   text-align: right;
+
+}
+
+li::before {
+   content: "";
+   background-color: #fff;
+   position: absolute;
+   left: 20px;
+   bottom: -0.3rem;
+   height: 3px;
+   width: 0;
+   transition: 0.3s ease-in-out;
+}
+
+li:hover::before {
+   content: "";
+   background-color: #fff;
+   position: absolute;
+   left: 20px;
+   bottom: -0.3rem;
+   height: 3px;
+   width: 70%;
+}
+
+nav li {
+   list-style: none;
+   position: relative;
+   cursor: pointer;
+}
+
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex;
+}
+
+.contact img {
+    height: auto;
+    width: 600px;
+    margin-right: 50px;
+    margin-left: 90px;
+    margin-top: 250px;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInDown 1s ease-out;
+}
+
+.contact img:hover {
+    transform: scale(1.1);
+}
+
+.content1 {
+    padding: 100px;
+}
+
+.content1 h2 {
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.content1 h3 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.content1 p {
+    color: #222;
+    font-size: 20px;
+    line-height: var(--p-line-height);
+}
+h2:hover {
+    color: #ffd900;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-contact p,
+.footer-about p {
+    margin-bottom: 15px;
+}
+
+.footer-hr hr {
+    border-color: var(--footer-text-color);
+    margin: 20px auto;
+}
+
+.footer-hr p {
+    font-size: 0.8rem;
+}
